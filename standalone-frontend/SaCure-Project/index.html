@@ -88,6 +88,32 @@
         </div>
     </header> 
     <main>
+ <div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Chat support</h4>
+                    <p class="chatbox__description--header">Hi. My name is Sam. How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+                <button class="chatbox__send--footer tts__button"><img src="https://github.com/Lydia000025/chatbot-deployment/blob/main/standalone-frontend/images/text-to-speech.svg"/></button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="https://github.com/Lydia000025/chatbot-deployment/blob/main/standalone-frontend/images/chatbox-icon.svg" title="btnimg"/></button>
+        </div>
+    </div>
+</div>
       <section class="sec1 container d-flex justify-content-center">
         <h1>Get Help IMMEDIATELY</h1>
         <div class="sec-con d-flex justify-content-center gap-3 align-items-center">
@@ -363,6 +389,10 @@
 
 
 
+    script>
+        $SCRIPT_ROOT = request.script_root|tojson ;
+    </script> 
+<script src="app.js"text/javascript" src="{{ url_for('static', filename='app.js')}}"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <iframe src="https://text-translator.streamlit.app/" frameborder="0" width="800" height="600"></iframe>
